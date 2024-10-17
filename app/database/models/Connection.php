@@ -14,10 +14,10 @@ class Connection
         } 
 
         try {
-            $host = 'http://mysql.infocimol.com.br';
-            $dbname = 'infocimol18';
-            $user = 'infocimol18';
-            $pass = 'tastyc1234';
+            $host = 'localhost';
+            $dbname = 'tastyC';
+            $user = 'root';
+            $pass = '';
 
             static::$pdo = new PDO('mysql:host=$host;dbname=$dbname', '$user', '$pass', [
                 PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
